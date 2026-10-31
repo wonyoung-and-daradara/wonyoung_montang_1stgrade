@@ -1,6 +1,6 @@
 name: "코드 리뷰 요청"
 description: 직접 작성한 코드에 대한 리뷰를 요청합니다.
-title: "[코드 리뷰] 프로젝트명 – 가장 피드백받고 싶은 부분"
+title: "[ Review ] "
 body:
   - type: textarea
     id: review-reason

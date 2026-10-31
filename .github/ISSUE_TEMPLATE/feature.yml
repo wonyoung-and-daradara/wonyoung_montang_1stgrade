@@ -1,0 +1,33 @@
+name: "기능 추가"
+description: 기능 추가 작업 사항을 작성해주세요.
+title: "[ Feat ] "
+labels: [":sparkles: FEAT"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        작성 예시 : "[ Feat ] 로그인 기능 구현"
+  - type: textarea
+    id: feat-description
+    attributes:
+      label: 🛠 Issue
+      description: 어떠한 기능을 추가하시는 건지 작성해주세요.
+      placeholder: 설명을 작성해주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: feat-list
+    attributes:
+      label: 📝 To-do
+      description: 작업에 필요한 목록을 작성해주세요.
+      placeholder: 목록을 작성해주세요.
+    validations:
+      required: false
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 🔍 접근 방법
+      description: 고려하신 방법이나, 접근에 대해서 설명해주세요.
+      placeholder: 설명을 작성해주세요.
+    validations:
+      required: false

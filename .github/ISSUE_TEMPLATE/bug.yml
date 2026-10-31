@@ -1,0 +1,36 @@
+name: "버그 수정"
+description: 버그 수정 사항을 작성해주세요.
+title: "[ Fix ] "
+labels: [":bug: FIX"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        작성 예시 : "[ Fix ] 로그인 기능 버그 수정"
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 🐛 Issue
+      description: 버그가 발생한 이슈 이름과 번호를 작성해주세요.
+      placeholder: "[ Feat ] 로그인 기능 구현 <#1>"
+    validations:
+      required: false
+  - type: textarea
+    id: textarea_description
+    attributes:
+      label: 🐝 버그 발생 부분
+      description: 버그가 발생한 부분을 작성해주세요.
+      placeholder: |
+        1. <버그 설명 1>
+        2. <버그 설명 2>
+      render: ""
+    validations:
+      required: true
+  - type: textarea
+    id: fix-list
+    attributes:
+      label: 📝 To-do
+      description: 작업에 필요한 목록을 작성해주세요.
+      placeholder: 목록을 작성해주세요.
+    validations:
+      required: false

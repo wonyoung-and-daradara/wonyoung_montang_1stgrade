@@ -1,0 +1,43 @@
+name: "코드 리뷰 요청"
+description: 직접 작성한 코드에 대한 리뷰를 요청합니다.
+title: "[ Review ] "
+body:
+  - type: textarea
+    id: review-reason
+    attributes:
+      label: 💬 리뷰를 요청한 이유
+      description: |
+        어떤 프로그램을 만들었나요? 직접 작성하면서 가장 어려웠던 점이나
+        다시 읽었을 때 이해하기 어려웠던 부분을 간단히 적어주세요.
+      placeholder: 설명을 작성해주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: review-code
+    attributes:
+      label: 📂 리뷰받고 싶은 코드
+      description: 리뷰받고 싶은 코드의 위치를 알려주세요.
+      placeholder: |
+        - 파일명:
+        - 직접 작성한 부분:
+        - 특히 봐주었으면 하는 함수나 코드:
+    validations:
+      required: true
+  - type: textarea
+    id: review-question
+    attributes:
+      label: 🙋 궁금한 점
+      description: |
+        코드를 작성할 때 기대한 동작과 실제로 나타난 결과를 적어주세요.
+        직접 시도해본 방법이 있다면 함께 적어주세요.
+      placeholder: 설명을 작성해주세요.
+    validations:
+      required: false
+  - type: checkboxes
+    id: review-checklist
+    attributes:
+      label: 🔍 함께 확인할 내용
+      options:
+        - label: 어떤 입력이나 상황에서 동작을 확인할지 정하기
+        - label: 예상한 결과와 실제 코드의 동작 비교하기
+        - label: 수정해볼 부분 한 가지와 그 이유 정리하기
